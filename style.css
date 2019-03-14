@@ -1,0 +1,35 @@
+@font-face{
+	font-family: kenvector;
+	src: url(img/Bonus/kenvector_future_thin.ttf);
+}
+body{
+	background-image: url('img/Backgrounds/black.png'); 
+}
+canvas{
+	display: block;
+	margin: auto;
+	border: 1px solid #000;
+	background-image: url('img/Backgrounds/blue.png');
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	animation: animationBackground;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	cursor: url("img/PNG/UI/cursor.png"), pointer;
+}
+@keyframes animationBackground{
+	from{background-position: 0 0;}
+	to{background-position: 0 100%;}
+}
+#totalProgress {
+	border: 1px solid black;  
+	display: block;
+	margin: auto;
+	width: 960px;  
+	height: 10px;
+}
+#currentProgress {
+	height: 10px;  
+	background-color: green;
+}
